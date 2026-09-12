@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --background: #f4f1ea;
+  --foreground: #141311;
+  --surface: rgb(255 255 255 / 78%);
+  --surface-strong: #ffffff;
+  --border: rgb(20 19 17 / 12%);
+  --muted-foreground: #5f5a50;
+  --accent: #a65433;
+  --shadow: 0 24px 80px -40px rgb(18 17 16 / 35%);
+  --hero: radial-gradient(circle at top left, rgb(255 255 255 / 95%), transparent 40%),
+    linear-gradient(135deg, #efe7da 0%, #f7f3eb 52%, #ece4d7 100%);
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #10100f;
+  --foreground: #f4efe6;
+  --surface: rgb(29 29 27 / 76%);
+  --surface-strong: #1c1c1a;
+  --border: rgb(244 239 230 / 12%);
+  --muted-foreground: #beb4a5;
+  --accent: #efac70;
+  --shadow: 0 24px 80px -40px rgb(0 0 0 / 75%);
+  --hero: radial-gradient(circle at top left, rgb(255 255 255 / 8%), transparent 35%),
+    linear-gradient(135deg, #181715 0%, #10100f 52%, #22211f 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    "Segoe UI", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+a,
+button {
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .panel {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(18px);
+  }
+
+  .hero-surface {
+    background: var(--hero);
+  }
+}
