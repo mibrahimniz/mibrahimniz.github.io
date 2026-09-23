@@ -24,8 +24,7 @@ export const projects = [
     overview:
       "BayanatiHub is a centralized enterprise data governance platform designed to support metadata management, data discovery, lineage visualization, governance workflows, collaboration, and enterprise data operations.",
 
-    role:
-      "Senior Full Stack Engineer responsible for designing and shipping frontend and backend capabilities across governance, metadata, collaboration, integrations, and platform workflows.",
+    role: "Senior Full Stack Engineer responsible for designing and shipping frontend and backend capabilities across governance, metadata, collaboration, integrations, and platform workflows.",
 
     contributions: [
       "Designed and shipped enterprise governance and metadata-management capabilities for centralized data operations.",
@@ -72,8 +71,7 @@ export const projects = [
     overview:
       "Ingage PFM is a personal finance management platform used in enterprise banking environments to provide customers with financial insights and tools around transactions, budgeting, savings, notifications, and other financial workflows.",
 
-    role:
-      "Software Engineer focused heavily on backend systems, distributed processing, financial workflows, integrations, and production banking services.",
+    role: "Software Engineer focused heavily on backend systems, distributed processing, financial workflows, integrations, and production banking services.",
 
     contributions: [
       "Designed and shipped distributed backend modules powering transaction insights, budgeting systems, notifications, savings goals, and financial workflows.",
@@ -120,8 +118,7 @@ export const projects = [
     overview:
       "Rubix is an enterprise digital banking platform supporting retail and corporate banking operations through interconnected services covering accounts, payroll, transfers, standing orders, beneficiaries, and back-office workflows.",
 
-    role:
-      "Software Engineer focused on backend services, banking workflows, APIs, microservices, and distributed financial systems.",
+    role: "Software Engineer focused on backend services, banking workflows, APIs, microservices, and distributed financial systems.",
 
     contributions: [
       "Designed and shipped backend services supporting enterprise digital banking workflows.",

@@ -1,9 +1,7 @@
 import { ProjectCaseStudy } from "@/components/projects/project-case-study";
 import { projects } from "@/lib/projects";
 
-const project = projects.find(
-  (project) => project.slug === "bayanatihub",
-);
+const project = projects.find((project) => project.slug === "bayanatihub");
 
 export const metadata = {
   title: "BayanatiHub | Muhammad Ibrahim Nizamani",

@@ -13,14 +13,13 @@ export function SiteFooter() {
 
         <nav aria-label="Professional links">
           <ul className="flex flex-wrap items-center gap-5">
-            {/* GitHub */}
             <li>
               <a
                 href={siteConfig.links.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="group relative inline-flex items-center gap-2 text-sm font-medium text-(--muted-foreground) transition-all duration-300 hover:-translate-y-0.5 hover:text-(--foreground) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)"
+                className="group relative inline-flex items-center gap-2 text-sm font-medium text-(--muted-foreground) transition-all duration-300 hover:-translate-y-0.5 hover:text-(--foreground) focus-visible:ring-2 focus-visible:ring-(--foreground) focus-visible:outline-none"
               >
                 <SiGithub
                   className="h-4 w-4 transition-transform duration-300 group-hover:scale-110"
@@ -34,14 +33,13 @@ export function SiteFooter() {
               </a>
             </li>
 
-            {/* LinkedIn */}
             <li>
               <a
                 href={siteConfig.links.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="group relative inline-flex items-center gap-2 text-sm font-medium text-(--muted-foreground) transition-all duration-300 hover:-translate-y-0.5 hover:text-[#0A66C2] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A66C2]"
+                className="group relative inline-flex items-center gap-2 text-sm font-medium text-(--muted-foreground) transition-all duration-300 hover:-translate-y-0.5 hover:text-[#0A66C2] focus-visible:ring-2 focus-visible:ring-[#0A66C2] focus-visible:outline-none"
               >
                 <FaLinkedinIn
                   className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
@@ -55,14 +53,13 @@ export function SiteFooter() {
               </a>
             </li>
 
-            {/* Upwork */}
             <li>
               <a
-                href="https://www.upwork.com/freelancers/~01e09da957f3af849e"
+                href={siteConfig.links.upwork}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Upwork"
-                className="group relative inline-flex items-center gap-2 text-sm font-medium text-(--muted-foreground) transition-all duration-300 hover:-translate-y-0.5 hover:text-[#14A800] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#14A800]"
+                className="group relative inline-flex items-center gap-2 text-sm font-medium text-(--muted-foreground) transition-all duration-300 hover:-translate-y-0.5 hover:text-[#14A800] focus-visible:ring-2 focus-visible:ring-[#14A800] focus-visible:outline-none"
               >
                 <SiUpwork
                   className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"
@@ -76,14 +73,13 @@ export function SiteFooter() {
               </a>
             </li>
 
-            {/* Resume */}
             <li>
               <a
                 href={siteConfig.links.resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Resume"
-                className="group relative inline-flex items-center gap-2 text-sm font-medium text-(--muted-foreground) transition-all duration-300 hover:-translate-y-0.5 hover:text-(--foreground) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)"
+                className="group relative inline-flex items-center gap-2 text-sm font-medium text-(--muted-foreground) transition-all duration-300 hover:-translate-y-0.5 hover:text-(--foreground) focus-visible:ring-2 focus-visible:ring-(--foreground) focus-visible:outline-none"
               >
                 <FiFileText
                   className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110"

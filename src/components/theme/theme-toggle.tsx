@@ -12,9 +12,7 @@ function getSystemTheme(): Theme {
     return "light";
   }
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
 function applyTheme(theme: Theme) {
@@ -85,7 +83,7 @@ export function ThemeToggle() {
         emitChange();
       }}
     >
-      {theme === "dark" ? "Dark mode" : "Light mode"}
+      {theme === "light" ? "Dark mode" : "Light mode"}
     </button>
   );
 }

@@ -63,31 +63,129 @@ export default function ExperiencePage() {
     <main id="main-content" className="flex-1">
       <section
         aria-labelledby="experience-title"
-        className="shell py-16 sm:py-20 lg:py-24"
+        className="relative overflow-hidden border-b border-(--border)"
       >
-        <div className="max-w-4xl">
-          <p className="text-sm font-medium uppercase tracking-[0.24em] text-(--muted-foreground)">
-            Experience
-          </p>
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,color-mix(in_srgb,var(--accent)_10%,transparent),transparent_35%),radial-gradient(circle_at_85%_15%,color-mix(in_srgb,var(--accent-secondary)_10%,transparent),transparent_35%)]"
+        />
 
-          <h1
-            id="experience-title"
-            className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl"
-          >
-            Building production software across fintech, data, and SaaS.
-          </h1>
+        <div className="relative mx-auto flex w-full max-w-[1400px] justify-center px-6 py-14 text-center sm:px-8 sm:py-18 lg:px-10 lg:py-20">
+          <div className="w-full max-w-5xl">
+            <div className="inline-flex items-center gap-3 rounded-full border border-(--border) bg-(--card)/80 px-5 py-3 font-mono text-base font-semibold tracking-[0.14em] text-(--accent) uppercase shadow-sm backdrop-blur-sm">
+              <span
+                aria-hidden="true"
+                className="h-2.5 w-2.5 shrink-0 rounded-full bg-(--accent) shadow-[0_0_12px_color-mix(in_srgb,var(--accent)_60%,transparent)]"
+              />
+              Career & engineering experience
+            </div>
 
-          <p className="mt-6 max-w-3xl text-base leading-7 text-(--muted-foreground) sm:text-lg">
-            A career spanning enterprise applications, digital banking,
-            distributed systems, data platforms, and full-stack product
-            development.
-          </p>
+            <p className="eyebrow mt-8">2019 — PRESENT</p>
 
-          <div className="mt-12 space-y-10">
-            {experiences.map((experience) => (
+            <h1
+              id="experience-title"
+              className="mx-auto mt-4 max-w-5xl text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl"
+            >
+              A career built around{" "}
+              <span className="bg-linear-to-r from-(--accent) to-(--accent-secondary) bg-clip-text text-transparent">
+                production software.
+              </span>
+            </h1>
+
+            <p className="mx-auto mt-7 max-w-4xl text-base leading-8 text-(--muted-foreground) sm:text-lg">
+              Seven-plus years of software engineering experience spanning enterprise applications,
+              fintech, digital banking, personal finance, data platforms, and full-stack product
+              development.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        aria-label="Career overview"
+        className="relative overflow-hidden border-b border-(--border)"
+      >
+        <div aria-hidden="true" className="bg-grid pointer-events-none absolute inset-0" />
+
+        <div className="shell relative py-12 sm:py-16">
+          <div className="grid gap-5 md:grid-cols-3">
+            <div className="group rounded-[1.5rem] border border-(--border) bg-(--card) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-lg sm:p-7">
+              <p className="font-mono text-base font-semibold tracking-[0.14em] text-(--accent) uppercase">
+                Experience
+              </p>
+
+              <p className="mt-4 text-2xl font-semibold tracking-tight sm:text-[1.7rem]">
+                7+ years
+              </p>
+
+              <p className="mt-2 text-sm leading-6 text-(--muted-foreground) sm:text-base">
+                Professional software development
+              </p>
+            </div>
+
+            <div className="group rounded-[1.5rem] border border-(--border) bg-(--card) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-lg sm:p-7">
+              <p className="font-mono text-base font-semibold tracking-[0.14em] text-(--accent) uppercase">
+                Focus
+              </p>
+
+              <p className="mt-4 text-2xl font-semibold tracking-tight sm:text-[1.7rem]">
+                Full Stack
+              </p>
+
+              <p className="mt-2 text-sm leading-6 text-(--muted-foreground) sm:text-base">
+                Backend architecture with frontend experience
+              </p>
+            </div>
+
+            <div className="group rounded-[1.5rem] border border-(--border) bg-(--card) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-lg sm:p-7">
+              <p className="font-mono text-base font-semibold tracking-[0.14em] text-(--accent) uppercase">
+                Domains
+              </p>
+
+              <p className="mt-4 text-2xl font-semibold tracking-tight sm:text-[1.7rem]">
+                Fintech + Data
+              </p>
+
+              <p className="mt-2 text-sm leading-6 text-(--muted-foreground) sm:text-base">
+                Enterprise systems and SaaS products
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="career-title" className="relative overflow-hidden">
+        <div aria-hidden="true" className="bg-grid pointer-events-none absolute inset-0" />
+
+        <div className="shell relative py-16 sm:py-20 lg:py-24">
+          <div className="mx-auto mb-12 max-w-4xl text-center">
+            <p className="font-mono text-base font-semibold tracking-[0.16em] text-(--accent) uppercase">
+              Career timeline
+            </p>
+
+            <h2
+              id="career-title"
+              className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-[2.75rem]"
+            >
+              From backend development to{" "}
+              <span className="bg-linear-to-r from-(--accent) to-(--accent-secondary) bg-clip-text text-transparent">
+                full-stack engineering.
+              </span>
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-(--muted-foreground) sm:text-lg">
+              A progression through software development roles covering backend engineering,
+              distributed systems, fintech, digital banking, enterprise data, and full-stack product
+              development.
+            </p>
+          </div>
+
+          <div className="space-y-8 lg:space-y-10">
+            {experiences.map((experience, index) => (
               <ExperienceItem
                 key={`${experience.company}-${experience.period}`}
                 {...experience}
+                index={index + 1}
               />
             ))}
           </div>

@@ -10,6 +10,7 @@ export const siteConfig = {
     email: "mibrahimniz@gmail.com",
     github: "https://github.com/mibrahimniz",
     linkedin: "https://www.linkedin.com/in/muhammad-ibrahim-nizamani/",
+    upwork: "https://www.upwork.com/freelancers/~01e09da957f3af849e",
     resume: "/ibrahim%27s%20resume.pdf",
   },
 
@@ -17,6 +18,6 @@ export const siteConfig = {
     { href: "/about", label: "About" },
     { href: "/experience", label: "Experience" },
     { href: "/projects", label: "Projects" },
-    { href: "/#contact", label: "Contact" },
+    { href: "/contact", label: "Contact" },
   ],
 } as const;
