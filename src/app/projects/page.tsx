@@ -19,21 +19,23 @@ export default function ProjectsPage() {
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,color-mix(in_srgb,var(--accent)_10%,transparent),transparent_35%),radial-gradient(circle_at_85%_15%,color-mix(in_srgb,var(--accent-secondary)_10%,transparent),transparent_35%)]"
         />
 
-        <div className="relative mx-auto flex w-full max-w-[1400px] justify-center px-6 py-14 text-center sm:px-8 sm:py-18 lg:px-10 lg:py-20">
-          <div className="w-full max-w-5xl">
-            <div className="inline-flex items-center gap-3 rounded-full border border-(--border) bg-(--card)/80 px-5 py-2.5 font-mono text-sm font-semibold tracking-[0.16em] text-(--accent) uppercase shadow-sm backdrop-blur-sm">
+        <div className="shell relative py-5 text-center sm:py-6 lg:py-7">
+          <div className="mx-auto max-w-5xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-(--border) bg-(--surface-strong)/80 px-3 py-1.5 font-mono text-[10px] font-semibold tracking-[0.2em] text-(--accent) uppercase shadow-sm backdrop-blur-sm">
               <span
                 aria-hidden="true"
-                className="h-2.5 w-2.5 rounded-full bg-(--accent) shadow-[0_0_12px_color-mix(in_srgb,var(--accent)_60%,transparent)]"
+                className="h-2 w-2 rounded-full bg-(--accent) shadow-[0_0_12px_color-mix(in_srgb,var(--accent)_60%,transparent)]"
               />
               Selected Work
             </div>
 
-            <p className="eyebrow mt-7">Enterprise · Fintech · Digital Products</p>
+            <p className="mt-2 font-mono text-[10px] font-semibold tracking-[0.22em] text-(--section-label) uppercase sm:text-[11px]">
+              Enterprise · Fintech · Digital Products
+            </p>
 
             <h1
               id="projects-title"
-              className="mx-auto mt-4 max-w-5xl text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl"
+              className="mx-auto mt-2 max-w-5xl text-3xl font-semibold tracking-tight sm:text-[2.5rem] lg:text-5xl"
             >
               Systems and products I&apos;ve helped{" "}
               <span className="bg-linear-to-r from-(--accent) to-(--accent-secondary) bg-clip-text text-transparent">
@@ -41,7 +43,7 @@ export default function ProjectsPage() {
               </span>
             </h1>
 
-            <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-(--muted-foreground) sm:text-lg">
+            <p className="mx-auto mt-2.5 max-w-3xl text-sm leading-6 text-(--muted-foreground) sm:text-base sm:leading-7">
               A selection of production software spanning enterprise data governance, digital
               banking, personal finance, and modern backend systems.
             </p>
@@ -52,8 +54,8 @@ export default function ProjectsPage() {
       <section aria-labelledby="projects-grid-title" className="relative overflow-hidden">
         <div aria-hidden="true" className="bg-grid pointer-events-none absolute inset-0" />
 
-        <div className="relative mx-auto w-full max-w-[1400px] px-6 py-12 sm:px-8 sm:py-14 lg:px-10 lg:py-16">
-          <div className="mb-8">
+        <div className="relative mx-auto w-full max-w-[1400px] px-6 py-7 sm:px-8 sm:py-9 lg:px-10 lg:py-11">
+          <div className="mb-6">
             <p className="eyebrow">Portfolio</p>
 
             <h2

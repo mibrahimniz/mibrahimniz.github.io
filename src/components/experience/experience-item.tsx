@@ -40,7 +40,7 @@ export function ExperienceItem({
         </div>
       </div>
 
-      <div className="relative overflow-hidden rounded-[1.75rem] border border-(--border) bg-(--card) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-xl sm:p-7 lg:p-8">
+      <div className="relative overflow-hidden rounded-[1.75rem] border border-(--border) bg-(--surface-strong) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-xl sm:p-7 lg:p-8">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-(--accent)/10 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100"

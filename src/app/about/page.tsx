@@ -65,11 +65,11 @@ function GlobeIcon() {
   );
 }
 
-function ArrowDownIcon() {
+function ArrowUpIcon() {
   return (
     <svg aria-hidden="true" viewBox="0 0 20 20" fill="none" className="h-4 w-4">
       <path
-        d="M10 4v11M5.5 10.5 10 15l4.5-4.5"
+        d="M10 16V5M5.5 9.5 10 5l4.5 4.5"
         stroke="currentColor"
         strokeWidth="1.7"
         strokeLinecap="round"
@@ -84,29 +84,29 @@ export default function AboutPage() {
     <main id="main-content" className="flex-1">
       <section className="hero-surface relative overflow-hidden border-b border-(--border)">
         <div className="pointer-events-none absolute inset-0">
-          <div className="absolute top-[15%] left-[5%] h-72 w-72 rounded-full bg-(--accent)/6 blur-3xl" />
-          <div className="absolute top-[10%] right-[8%] h-80 w-80 rounded-full bg-(--accent-secondary)/6 blur-3xl" />
+          <div className="absolute top-[15%] left-[5%] h-64 w-64 rounded-full bg-(--accent)/6 blur-3xl" />
+          <div className="absolute top-[10%] right-[8%] h-72 w-72 rounded-full bg-(--accent-secondary)/6 blur-3xl" />
         </div>
 
-        <div className="relative mx-auto flex w-full max-w-[1400px] justify-center px-6 py-10 text-center sm:px-8 sm:py-14 lg:px-10 lg:py-16">
-          <div className="w-full max-w-5xl">
-            <div className="eyebrow inline-flex items-center gap-3 rounded-full border border-(--border) bg-(--surface) px-5 py-2.5 shadow-sm">
-              <span className="h-2.5 w-2.5 rounded-full bg-(--accent)" />
+        <div className="shell relative py-6 text-center sm:py-7 lg:py-8">
+          <div className="mx-auto max-w-5xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-(--border) bg-(--surface-strong)/80 px-3.5 py-1.5 font-mono text-[10px] font-semibold tracking-[0.2em] text-(--accent) uppercase shadow-sm backdrop-blur-sm">
+              <span className="h-2 w-2 rounded-full bg-(--accent)" />
               Career & Engineering Profile
             </div>
 
-            <p className="mt-7 font-mono text-[15px] font-semibold tracking-[0.18em] text-(--accent) uppercase">
+            <p className="mt-3 font-mono text-[11px] font-semibold tracking-[0.22em] text-(--section-label) uppercase">
               7+ Years · Full Stack · Backend Focused
             </p>
 
             <h1
               id="about-title"
-              className="mx-auto mt-4 max-w-5xl text-5xl font-semibold tracking-[-0.045em] sm:text-6xl lg:text-7xl"
+              className="mx-auto mt-2 max-w-5xl text-4xl font-semibold tracking-tight sm:text-[2.75rem] lg:text-5xl"
             >
               A career built around <span className="gradient-text">production software.</span>
             </h1>
 
-            <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-(--muted-foreground) sm:text-xl sm:leading-9">
+            <p className="mx-auto mt-3 max-w-4xl text-sm leading-6 text-(--muted-foreground) sm:text-base sm:leading-7">
               Seven-plus years of software engineering experience spanning enterprise applications,
               fintech, digital banking, personal finance, data platforms, and full-stack product
               development.
@@ -116,12 +116,12 @@ export default function AboutPage() {
       </section>
 
       <section className="border-b border-(--border)">
-        <div className="shell py-10 sm:py-14">
+        <div className="shell py-8 sm:py-10">
           <div className="grid gap-4 md:grid-cols-3">
             <div className="interactive-card rounded-2xl p-6">
               <p className="eyebrow">Experience</p>
 
-              <h2 className="mt-4 text-2xl font-semibold">7+ years</h2>
+              <h2 className="mt-3 text-2xl font-semibold">7+ years</h2>
 
               <p className="mt-2 text-sm leading-6 text-(--muted-foreground)">
                 Professional software development
@@ -131,7 +131,7 @@ export default function AboutPage() {
             <div className="interactive-card rounded-2xl p-6">
               <p className="eyebrow">Focus</p>
 
-              <h2 className="mt-4 text-2xl font-semibold">Full Stack</h2>
+              <h2 className="mt-3 text-2xl font-semibold">Full Stack</h2>
 
               <p className="mt-2 text-sm leading-6 text-(--muted-foreground)">
                 Backend architecture with frontend experience
@@ -141,7 +141,7 @@ export default function AboutPage() {
             <div className="interactive-card rounded-2xl p-6">
               <p className="eyebrow">Domains</p>
 
-              <h2 className="mt-4 text-2xl font-semibold">Fintech + Data</h2>
+              <h2 className="mt-3 text-2xl font-semibold">Fintech + Data</h2>
 
               <p className="mt-2 text-sm leading-6 text-(--muted-foreground)">
                 Enterprise systems and SaaS products
@@ -152,25 +152,25 @@ export default function AboutPage() {
       </section>
 
       <section className="border-b border-(--border)">
-        <div className="shell py-20 sm:py-24 lg:py-28">
-          <div className="grid gap-12 lg:grid-cols-[0.65fr_1.35fr] lg:items-start">
+        <div className="shell py-12 sm:py-14 lg:py-16">
+          <div className="grid gap-8 lg:grid-cols-[0.65fr_1.35fr] lg:items-start">
             <div>
               <p className="eyebrow">01 · Profile</p>
 
-              <h2 className="mt-4 max-w-sm text-3xl font-semibold tracking-tight sm:text-4xl">
+              <h2 className="mt-3 max-w-sm text-3xl font-semibold tracking-tight sm:text-4xl">
                 Building systems with a product mindset.
               </h2>
 
-              <div className="mt-6 h-px w-16 bg-(--accent)" />
+              <div className="mt-5 h-px w-16 bg-(--accent)" />
             </div>
 
-            <div className="panel rounded-[1.75rem] p-8 sm:p-10">
+            <div className="panel rounded-[1.5rem] p-6 sm:p-7 lg:p-8">
               <div className="flex items-start gap-4">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-(--border) bg-(--surface-soft) text-(--accent-secondary)">
                   <CodeIcon />
                 </div>
 
-                <div className="space-y-5 text-base leading-7 text-(--muted-foreground) sm:text-lg sm:leading-8">
+                <div className="space-y-4 text-base leading-7 text-(--muted-foreground) sm:text-lg sm:leading-8">
                   <p>
                     I&apos;m Muhammad Ibrahim Nizamani, a Senior Full Stack Engineer focused on
                     building scalable backend systems, enterprise applications, and modern web
@@ -197,16 +197,16 @@ export default function AboutPage() {
       </section>
 
       <section className="border-b border-(--border)">
-        <div className="shell py-20 sm:py-24 lg:py-28">
-          <div className="grid gap-12 lg:grid-cols-[0.65fr_1.35fr]">
+        <div className="shell py-12 sm:py-14 lg:py-16">
+          <div className="grid gap-8 lg:grid-cols-[0.65fr_1.35fr]">
             <div>
               <p className="eyebrow">02 · Engineering Strengths</p>
 
-              <h2 className="mt-4 max-w-sm text-3xl font-semibold tracking-tight sm:text-4xl">
+              <h2 className="mt-3 max-w-sm text-3xl font-semibold tracking-tight sm:text-4xl">
                 Areas where I do most of my work.
               </h2>
 
-              <p className="mt-5 max-w-sm text-base leading-7 text-(--muted-foreground)">
+              <p className="mt-4 max-w-sm text-base leading-7 text-(--muted-foreground)">
                 A combination of backend depth, full-stack experience, and production engineering
                 across business-critical systems.
               </p>
@@ -218,7 +218,7 @@ export default function AboutPage() {
                   <LayersIcon />
                 </div>
 
-                <p className="eyebrow mt-6">Architecture</p>
+                <p className="eyebrow mt-5">Architecture</p>
 
                 <h3 className="mt-2 text-lg font-semibold">APIs & Microservices</h3>
 
@@ -233,7 +233,7 @@ export default function AboutPage() {
                   <DatabaseIcon />
                 </div>
 
-                <p className="eyebrow mt-6">Data</p>
+                <p className="eyebrow mt-5">Data</p>
 
                 <h3 className="mt-2 text-lg font-semibold">SQL & NoSQL Systems</h3>
 
@@ -248,7 +248,7 @@ export default function AboutPage() {
                   <GlobeIcon />
                 </div>
 
-                <p className="eyebrow mt-6">Integration</p>
+                <p className="eyebrow mt-5">Integration</p>
 
                 <h3 className="mt-2 text-lg font-semibold">Enterprise Integrations</h3>
 
@@ -263,7 +263,7 @@ export default function AboutPage() {
                   <CodeIcon />
                 </div>
 
-                <p className="eyebrow mt-6">Full Stack</p>
+                <p className="eyebrow mt-5">Full Stack</p>
 
                 <h3 className="mt-2 text-lg font-semibold">Product Development</h3>
 
@@ -278,25 +278,25 @@ export default function AboutPage() {
       </section>
 
       <section className="border-b border-(--border)">
-        <div className="shell py-20 sm:py-24 lg:py-28">
+        <div className="shell py-12 sm:py-14 lg:py-16">
           <div className="max-w-3xl">
             <p className="eyebrow">03 · Domains</p>
 
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
               Experience across different product environments.
             </h2>
 
-            <p className="mt-5 text-base leading-7 text-(--muted-foreground) sm:text-lg">
+            <p className="mt-4 text-base leading-7 text-(--muted-foreground) sm:text-lg">
               My professional work has covered several areas where backend reliability,
               integrations, data, and business workflows are central to the product.
             </p>
           </div>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="interactive-card rounded-2xl p-6">
               <p className="eyebrow">01</p>
 
-              <h3 className="mt-5 text-lg font-semibold">Fintech</h3>
+              <h3 className="mt-4 text-lg font-semibold">Fintech</h3>
 
               <p className="mt-2 text-sm leading-6 text-(--muted-foreground)">
                 Personal finance, financial workflows, transactions, savings, notifications, and
@@ -307,7 +307,7 @@ export default function AboutPage() {
             <div className="interactive-card rounded-2xl p-6">
               <p className="eyebrow">02</p>
 
-              <h3 className="mt-5 text-lg font-semibold">Digital Banking</h3>
+              <h3 className="mt-4 text-lg font-semibold">Digital Banking</h3>
 
               <p className="mt-2 text-sm leading-6 text-(--muted-foreground)">
                 Retail and corporate banking workflows, accounts, transfers, payroll, beneficiaries,
@@ -318,7 +318,7 @@ export default function AboutPage() {
             <div className="interactive-card rounded-2xl p-6">
               <p className="eyebrow">03</p>
 
-              <h3 className="mt-5 text-lg font-semibold">Enterprise Data</h3>
+              <h3 className="mt-4 text-lg font-semibold">Enterprise Data</h3>
 
               <p className="mt-2 text-sm leading-6 text-(--muted-foreground)">
                 Data governance, metadata, lineage, discovery, collaboration, and enterprise data
@@ -329,7 +329,7 @@ export default function AboutPage() {
             <div className="interactive-card rounded-2xl p-6">
               <p className="eyebrow">04</p>
 
-              <h3 className="mt-5 text-lg font-semibold">SaaS & Web</h3>
+              <h3 className="mt-4 text-lg font-semibold">SaaS & Web</h3>
 
               <p className="mt-2 text-sm leading-6 text-(--muted-foreground)">
                 Modern web applications, educational platforms, APIs, integrations, and full-stack
@@ -341,12 +341,12 @@ export default function AboutPage() {
       </section>
 
       <section className="border-b border-(--border)">
-        <div className="shell py-20 sm:py-24 lg:py-28">
-          <div className="grid gap-12 lg:grid-cols-[0.65fr_1.35fr] lg:items-start">
+        <div className="shell py-12 sm:py-14 lg:py-16">
+          <div className="grid gap-8 lg:grid-cols-[0.65fr_1.35fr] lg:items-start">
             <div>
               <p className="eyebrow">04 · Engineering Approach</p>
 
-              <h2 className="mt-4 max-w-sm text-3xl font-semibold tracking-tight sm:text-4xl">
+              <h2 className="mt-3 max-w-sm text-3xl font-semibold tracking-tight sm:text-4xl">
                 Practical engineering over unnecessary complexity.
               </h2>
             </div>
@@ -384,17 +384,17 @@ export default function AboutPage() {
       </section>
 
       <section>
-        <div className="shell py-20 sm:py-24 lg:py-28">
-          <div className="panel accent-glow overflow-hidden rounded-[2rem] p-8 sm:p-10 lg:p-12">
-            <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
+        <div className="shell py-12 sm:py-14 lg:py-16">
+          <div className="panel accent-glow overflow-hidden rounded-[1.5rem] p-6 sm:p-8 lg:p-9">
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
               <div className="max-w-2xl">
                 <p className="eyebrow">Explore the Work</p>
 
-                <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
+                <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
                   See the systems and products I&apos;ve worked on.
                 </h2>
 
-                <p className="mt-4 text-base leading-7 text-(--muted-foreground)">
+                <p className="mt-3 text-base leading-7 text-(--muted-foreground)">
                   Explore selected projects across enterprise data, fintech, digital banking, and
                   modern backend systems.
                 </p>
@@ -402,7 +402,7 @@ export default function AboutPage() {
 
               <a href="/projects" className="button-primary shrink-0">
                 View projects
-                <ArrowDownIcon />
+                <ArrowUpIcon />
               </a>
             </div>
           </div>

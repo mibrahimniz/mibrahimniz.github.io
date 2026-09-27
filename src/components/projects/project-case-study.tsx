@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import type { Project } from "@/lib/projects";
 
 type ProjectCaseStudyProps = {
@@ -93,16 +94,16 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
             <div className="absolute top-[10%] right-[8%] h-72 w-72 rounded-full bg-(--accent-secondary)/5 blur-3xl" />
           </div>
 
-          <div className="shell relative py-12 sm:py-16 lg:py-20">
+          <div className="shell relative py-6 sm:py-7 lg:py-8">
             <Link
               href="/projects"
-              className="animated-link rounded-full border border-(--border) bg-(--surface) px-4 py-2 text-sm font-medium shadow-sm hover:border-(--accent)"
+              className="animated-link inline-flex items-center gap-2 rounded-full border border-(--border) bg-(--surface) px-4 py-2 text-sm font-medium shadow-sm hover:border-(--accent)"
             >
               <ArrowLeft />
               <span>Back to projects</span>
             </Link>
 
-            <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
+            <div className="mt-7 grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
               <div className="max-w-4xl">
                 <div className="flex flex-wrap items-center gap-3">
                   <span className="eyebrow inline-flex items-center gap-2 rounded-full border border-(--border) bg-(--surface) px-3 py-2">
@@ -120,22 +121,22 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
 
                 <h1
                   id="project-title"
-                  className="mt-7 max-w-4xl text-5xl font-semibold tracking-[-0.04em] sm:text-6xl lg:text-7xl"
+                  className="mt-5 max-w-4xl text-5xl font-semibold tracking-[-0.04em] sm:text-6xl lg:text-[4.5rem]"
                 >
                   <span className="gradient-text">{project.name}</span>
                 </h1>
 
-                <p className="mt-5 font-mono text-xs font-medium tracking-[0.2em] text-(--muted-foreground) uppercase">
+                <p className="mt-3 font-mono text-xs font-medium tracking-[0.2em] text-(--muted-foreground) uppercase">
                   {project.period}
                 </p>
 
-                <p className="mt-8 max-w-3xl text-lg leading-8 text-(--muted-foreground) sm:text-xl">
+                <p className="mt-5 max-w-3xl text-lg leading-8 text-(--muted-foreground) sm:text-xl">
                   {project.description}
                 </p>
               </div>
 
               <div className="hidden lg:block">
-                <div className="font-mono text-[7rem] leading-none font-semibold tracking-[-0.08em] text-(--foreground)/5">
+                <div className="font-mono text-[6rem] leading-none font-semibold tracking-[-0.08em] text-(--foreground)/5">
                   {String(
                     ["bayanatihub", "ingage-pfm", "rubix"].indexOf(project.slug) + 1,
                   ).padStart(2, "0")}
@@ -146,7 +147,7 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
         </section>
 
         <section className="border-b border-(--border)">
-          <div className="shell py-10 sm:py-12">
+          <div className="shell py-8 sm:py-10">
             <div className="grid gap-4 md:grid-cols-3">
               <div className="interactive-card rounded-2xl p-6">
                 <p className="eyebrow">Project</p>
@@ -178,8 +179,8 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
         </section>
 
         <section aria-labelledby="overview-title" className="border-b border-(--border)">
-          <div className="shell py-20 sm:py-24 lg:py-28">
-            <div className="grid gap-12 lg:grid-cols-[0.65fr_1.35fr] lg:items-start">
+          <div className="shell py-16 sm:py-18 lg:py-20">
+            <div className="grid gap-10 lg:grid-cols-[0.65fr_1.35fr] lg:items-start">
               <div>
                 <p className="eyebrow">01 · Overview</p>
 
@@ -203,8 +204,8 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
         </section>
 
         <section aria-labelledby="role-title" className="border-b border-(--border)">
-          <div className="shell py-20 sm:py-24 lg:py-28">
-            <div className="grid gap-12 lg:grid-cols-[0.65fr_1.35fr] lg:items-start">
+          <div className="shell py-16 sm:py-18 lg:py-20">
+            <div className="grid gap-10 lg:grid-cols-[0.65fr_1.35fr] lg:items-start">
               <div>
                 <p className="eyebrow">02 · My Role</p>
 
@@ -238,8 +239,8 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
         </section>
 
         <section aria-labelledby="contributions-title" className="border-b border-(--border)">
-          <div className="shell py-20 sm:py-24 lg:py-28">
-            <div className="grid gap-12 lg:grid-cols-[0.65fr_1.35fr]">
+          <div className="shell py-16 sm:py-18 lg:py-20">
+            <div className="grid gap-10 lg:grid-cols-[0.65fr_1.35fr]">
               <div>
                 <p className="eyebrow">03 · Contributions</p>
 
@@ -276,8 +277,8 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
         </section>
 
         <section aria-labelledby="technical-title" className="border-b border-(--border)">
-          <div className="shell py-20 sm:py-24 lg:py-28">
-            <div className="grid gap-12 lg:grid-cols-[0.65fr_1.35fr]">
+          <div className="shell py-16 sm:py-18 lg:py-20">
+            <div className="grid gap-10 lg:grid-cols-[0.65fr_1.35fr]">
               <div>
                 <p className="eyebrow">04 · Technical Architecture</p>
 
@@ -353,8 +354,8 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
         </section>
 
         <section aria-labelledby="technologies-title" className="border-b border-(--border)">
-          <div className="shell py-20 sm:py-24 lg:py-28">
-            <div className="grid gap-12 lg:grid-cols-[0.65fr_1.35fr]">
+          <div className="shell py-16 sm:py-18 lg:py-20">
+            <div className="grid gap-10 lg:grid-cols-[0.65fr_1.35fr]">
               <div>
                 <p className="eyebrow">05 · Technology</p>
 
@@ -384,7 +385,7 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
         </section>
 
         <section>
-          <div className="shell py-20 sm:py-24 lg:py-28">
+          <div className="shell py-16 sm:py-18 lg:py-20">
             <div className="panel accent-glow overflow-hidden rounded-[2rem] p-8 sm:p-10 lg:p-12">
               <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
                 <div className="max-w-2xl">

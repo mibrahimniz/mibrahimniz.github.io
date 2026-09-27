@@ -122,8 +122,8 @@ export default function Home() {
         className="hero-surface relative overflow-hidden border-b border-(--border)"
       >
         <div className="shell relative py-14 sm:py-18 lg:py-20">
-          <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14">
-            <div className="max-w-3xl">
+          <div className="grid min-w-0 items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14">
+            <div className="max-w-3xl min-w-0">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-(--border) bg-(--surface) px-3.5 py-2 shadow-sm backdrop-blur-md">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-(--accent) opacity-30" />
@@ -183,7 +183,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative min-w-0">
               <div
                 aria-hidden="true"
                 className="absolute -inset-6 -z-10 rounded-[2rem] bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.10),transparent_65%)] blur-2xl"
@@ -261,9 +261,12 @@ export default function Home() {
 
                 <div className="mt-5 rounded-xl border border-(--border) bg-(--surface-soft) px-4 py-3">
                   <div className="flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-(--accent) shadow-[0_0_12px_var(--accent)]" />
+                    <span
+                      aria-hidden="true"
+                      className="h-2 w-2 shrink-0 rounded-full bg-(--accent) shadow-[0_0_12px_var(--accent)]"
+                    />
 
-                    <span className="font-mono text-xs font-medium text-(--muted-foreground)">
+                    <span className="font-mono text-[10px] font-medium whitespace-nowrap text-(--muted-foreground) sm:text-xs">
                       NODE.JS · TYPESCRIPT · REACT · PYTHON
                     </span>
                   </div>

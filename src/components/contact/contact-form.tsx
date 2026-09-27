@@ -69,7 +69,7 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="name"
-            className="mb-2 block font-mono text-[10px] font-semibold tracking-[0.2em] text-(--foreground) uppercase"
+            className="mb-2 block font-mono text-sm font-bold tracking-[0.14em] text-(--foreground) uppercase"
           >
             Your Name <span className="text-(--accent)">*</span>
           </label>
@@ -88,7 +88,7 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="email"
-            className="mb-2 block font-mono text-[10px] font-semibold tracking-[0.2em] text-(--foreground) uppercase"
+            className="mb-2 block font-mono text-sm font-bold tracking-[0.14em] text-(--foreground) uppercase"
           >
             Your Email <span className="text-(--accent)">*</span>
           </label>
@@ -109,7 +109,7 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="subject"
-            className="mb-2 block font-mono text-[10px] font-semibold tracking-[0.2em] text-(--foreground) uppercase"
+            className="mb-2 block font-mono text-sm font-bold tracking-[0.14em] text-(--foreground) uppercase"
           >
             Subject <span className="text-(--accent)">*</span>
           </label>
@@ -127,33 +127,46 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="engagement"
-            className="mb-2 block font-mono text-[10px] font-semibold tracking-[0.2em] text-(--foreground) uppercase"
+            className="mb-2 block font-mono text-sm font-bold tracking-[0.14em] text-(--foreground) uppercase"
           >
             Engagement Type
           </label>
 
-          <select
-            id="engagement"
-            name="engagement"
-            defaultValue=""
-            className="h-14 w-full rounded-xl border border-(--border) bg-(--background) px-4 text-sm text-(--foreground) transition-all outline-none focus:border-(--accent)/60 focus:ring-2 focus:ring-(--accent)/10"
-          >
-            <option value="" disabled>
-              Select an option
-            </option>
-            <option value="Full-time opportunity">Full-time opportunity</option>
-            <option value="Contract / freelance">Contract / freelance</option>
-            <option value="Software project">Software project</option>
-            <option value="Technical consultation">Technical consultation</option>
-            <option value="Other">Other</option>
-          </select>
+          <div className="relative">
+            <select
+              id="engagement"
+              name="engagement"
+              defaultValue=""
+              className="h-14 w-full appearance-none rounded-xl border border-(--border) bg-(--background) px-4 pr-12 text-sm text-(--foreground) outline-none focus:border-(--accent)/60 focus:ring-0"
+            >
+              <option value="" disabled>
+                Select an option
+              </option>
+              <option value="Full-time opportunity">Full-time opportunity</option>
+              <option value="Contract / freelance">Contract / freelance</option>
+              <option value="Software project">Software project</option>
+              <option value="Technical consultation">Technical consultation</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="pointer-events-none absolute top-1/2 right-4 h-5 w-5 -translate-y-1/2 text-(--muted-foreground)"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="m6 9 6 6 6-6" />
+            </svg>
+          </div>
         </div>
       </div>
 
       <div>
         <label
           htmlFor="message"
-          className="mb-2 block font-mono text-[10px] font-semibold tracking-[0.2em] text-(--foreground) uppercase"
+          className="mb-2 block font-mono text-sm font-bold tracking-[0.14em] text-(--foreground) uppercase"
         >
           Project Details & Requirements <span className="text-(--accent)">*</span>
         </label>

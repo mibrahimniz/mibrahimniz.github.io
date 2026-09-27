@@ -70,21 +70,23 @@ export default function ExperiencePage() {
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,color-mix(in_srgb,var(--accent)_10%,transparent),transparent_35%),radial-gradient(circle_at_85%_15%,color-mix(in_srgb,var(--accent-secondary)_10%,transparent),transparent_35%)]"
         />
 
-        <div className="relative mx-auto flex w-full max-w-[1400px] justify-center px-6 py-14 text-center sm:px-8 sm:py-18 lg:px-10 lg:py-20">
-          <div className="w-full max-w-5xl">
-            <div className="inline-flex items-center gap-3 rounded-full border border-(--border) bg-(--card)/80 px-5 py-3 font-mono text-base font-semibold tracking-[0.14em] text-(--accent) uppercase shadow-sm backdrop-blur-sm">
+        <div className="shell relative py-6 text-center sm:py-7 lg:py-8">
+          <div className="mx-auto max-w-5xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-(--border) bg-(--surface-strong)/80 px-3.5 py-1.5 font-mono text-[10px] font-semibold tracking-[0.2em] text-(--accent) uppercase shadow-sm backdrop-blur-sm">
               <span
                 aria-hidden="true"
-                className="h-2.5 w-2.5 shrink-0 rounded-full bg-(--accent) shadow-[0_0_12px_color-mix(in_srgb,var(--accent)_60%,transparent)]"
+                className="h-2 w-2 rounded-full bg-(--accent) shadow-[0_0_12px_color-mix(in_srgb,var(--accent)_60%,transparent)]"
               />
-              Career & engineering experience
+              Career & Engineering Experience
             </div>
 
-            <p className="eyebrow mt-8">2019 — PRESENT</p>
+            <p className="mt-3 font-mono text-[11px] font-semibold tracking-[0.22em] text-(--section-label) uppercase">
+              2019 — Present
+            </p>
 
             <h1
               id="experience-title"
-              className="mx-auto mt-4 max-w-5xl text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl"
+              className="mx-auto mt-2 max-w-5xl text-4xl font-semibold tracking-tight sm:text-[2.75rem] lg:text-5xl"
             >
               A career built around{" "}
               <span className="bg-linear-to-r from-(--accent) to-(--accent-secondary) bg-clip-text text-transparent">
@@ -92,7 +94,7 @@ export default function ExperiencePage() {
               </span>
             </h1>
 
-            <p className="mx-auto mt-7 max-w-4xl text-base leading-8 text-(--muted-foreground) sm:text-lg">
+            <p className="mx-auto mt-3 max-w-4xl text-sm leading-6 text-(--muted-foreground) sm:text-base sm:leading-7">
               Seven-plus years of software engineering experience spanning enterprise applications,
               fintech, digital banking, personal finance, data platforms, and full-stack product
               development.
@@ -107,9 +109,9 @@ export default function ExperiencePage() {
       >
         <div aria-hidden="true" className="bg-grid pointer-events-none absolute inset-0" />
 
-        <div className="shell relative py-12 sm:py-16">
+        <div className="shell relative py-8 sm:py-10 lg:py-12">
           <div className="grid gap-5 md:grid-cols-3">
-            <div className="group rounded-[1.5rem] border border-(--border) bg-(--card) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-lg sm:p-7">
+            <div className="group rounded-[1.5rem] border border-(--border) bg-(--surface-strong) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-lg sm:p-7">
               <p className="font-mono text-base font-semibold tracking-[0.14em] text-(--accent) uppercase">
                 Experience
               </p>
@@ -123,7 +125,7 @@ export default function ExperiencePage() {
               </p>
             </div>
 
-            <div className="group rounded-[1.5rem] border border-(--border) bg-(--card) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-lg sm:p-7">
+            <div className="group rounded-[1.5rem] border border-(--border) bg-(--surface-strong) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-lg sm:p-7">
               <p className="font-mono text-base font-semibold tracking-[0.14em] text-(--accent) uppercase">
                 Focus
               </p>
@@ -137,7 +139,7 @@ export default function ExperiencePage() {
               </p>
             </div>
 
-            <div className="group rounded-[1.5rem] border border-(--border) bg-(--card) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-lg sm:p-7">
+            <div className="group rounded-[1.5rem] border border-(--border) bg-(--surface-strong) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-lg sm:p-7">
               <p className="font-mono text-base font-semibold tracking-[0.14em] text-(--accent) uppercase">
                 Domains
               </p>
@@ -157,15 +159,15 @@ export default function ExperiencePage() {
       <section aria-labelledby="career-title" className="relative overflow-hidden">
         <div aria-hidden="true" className="bg-grid pointer-events-none absolute inset-0" />
 
-        <div className="shell relative py-16 sm:py-20 lg:py-24">
-          <div className="mx-auto mb-12 max-w-4xl text-center">
+        <div className="shell relative py-12 sm:py-16 lg:py-20">
+          <div className="mx-auto mb-10 max-w-4xl text-center sm:mb-12">
             <p className="font-mono text-base font-semibold tracking-[0.16em] text-(--accent) uppercase">
-              Career timeline
+              Career Timeline
             </p>
 
             <h2
               id="career-title"
-              className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-[2.75rem]"
+              className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-[2.75rem]"
             >
               From backend development to{" "}
               <span className="bg-linear-to-r from-(--accent) to-(--accent-secondary) bg-clip-text text-transparent">
@@ -173,7 +175,7 @@ export default function ExperiencePage() {
               </span>
             </h2>
 
-            <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-(--muted-foreground) sm:text-lg">
+            <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-(--muted-foreground) sm:text-lg">
               A progression through software development roles covering backend engineering,
               distributed systems, fintech, digital banking, enterprise data, and full-stack product
               development.

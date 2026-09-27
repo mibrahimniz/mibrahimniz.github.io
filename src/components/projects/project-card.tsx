@@ -10,7 +10,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ slug, name, category, description, technologies }: ProjectCardProps) {
   return (
-    <article className="group relative flex h-full min-h-[520px] flex-col overflow-hidden rounded-[1.5rem] border border-(--border) bg-(--card) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-xl sm:p-7">
+    <article className="group relative flex h-full min-h-[520px] flex-col overflow-hidden rounded-[1.5rem] border border-(--border) bg-(--surface-strong) p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-(--accent) hover:shadow-xl sm:p-7">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -top-20 -right-20 h-40 w-40 rounded-full bg-(--accent)/10 opacity-0 blur-3xl transition-opacity duration-300 group-hover:opacity-100"

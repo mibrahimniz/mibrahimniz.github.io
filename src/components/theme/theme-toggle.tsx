@@ -1,6 +1,7 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import { HiMoon, HiSun } from "react-icons/hi2";
 
 const STORAGE_KEY = "theme";
 const listeners = new Set<() => void>();
@@ -48,6 +49,7 @@ function subscribe(listener: () => void) {
   }
 
   const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
   const handleChange = (event: MediaQueryListEvent) => {
     if (window.localStorage.getItem(STORAGE_KEY)) {
       return;
@@ -68,22 +70,31 @@ function subscribe(listener: () => void) {
 export function ThemeToggle() {
   const theme = useSyncExternalStore(subscribe, getThemeSnapshot, () => "light");
 
-  const nextTheme = theme === "dark" ? "light" : "dark";
+  const isDark = theme === "dark";
+  const nextTheme = isDark ? "light" : "dark";
 
   return (
     <button
       type="button"
       aria-label={`Switch to ${nextTheme} mode`}
-      aria-pressed={theme === "dark"}
-      className="inline-flex items-center justify-center rounded-full border border-(--border) bg-(--surface) px-4 py-2 text-sm font-medium backdrop-blur"
+      title={`Switch to ${nextTheme} mode`}
       onClick={() => {
-        const updatedTheme = nextTheme;
+        const updatedTheme = isDark ? "light" : "dark";
+
         window.localStorage.setItem(STORAGE_KEY, updatedTheme);
         applyTheme(updatedTheme);
         emitChange();
       }}
+      className="group inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md border border-(--border) bg-(--surface) text-(--muted-foreground) transition-all duration-200 hover:-translate-y-0.5 hover:border-(--accent)/50 hover:bg-(--accent)/10 hover:text-(--accent) focus-visible:ring-2 focus-visible:ring-(--accent) focus-visible:ring-offset-2 focus-visible:outline-none"
     >
-      {theme === "light" ? "Dark mode" : "Light mode"}
+      {isDark ? (
+        <HiSun className="h-5 w-5" />
+      ) : (
+        <HiMoon
+          aria-hidden="true"
+          className="h-[19px] w-[19px] transition-transform duration-300 group-hover:-rotate-12"
+        />
+      )}
     </button>
   );
 }
