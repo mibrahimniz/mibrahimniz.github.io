@@ -16,13 +16,20 @@ const technologies = [
   "NestJS",
   "Express.js",
   "React",
-  "Python",
-  "PostgreSQL",
-  "MSSQL",
-  "Redis",
+  "Next.js",
+  "Angular",
+  "REST API",
+  "GraphQL",
+  "Microservices",
   "RabbitMQ",
-  "Docker",
-  "Kubernetes",
+  "Python",
+  "FastAPI",
+  "PostgreSQL",
+  "MongoDB",
+  "MSSQL",
+  "Git",
+  "Jest",
+  "Swagger",
 ];
 
 function ArrowIcon() {
@@ -119,12 +126,17 @@ export default function Home() {
     <main id="main-content" className="flex-1">
       <section
         aria-labelledby="intro-title"
-        className="hero-surface relative overflow-hidden border-b border-(--border)"
+        className="relative overflow-hidden border-b border-(--border)"
       >
-        <div className="shell relative py-14 sm:py-18 lg:py-20">
-          <div className="grid min-w-0 items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute top-[10%] left-[5%] h-64 w-64 rounded-full bg-(--accent)/5 blur-3xl" />
+          <div className="absolute top-[5%] right-[8%] h-72 w-72 rounded-full bg-(--accent-secondary)/5 blur-3xl" />
+        </div>
+
+        <div className="shell relative py-7 sm:py-9 lg:py-11">
+          <div className="grid min-w-0 items-center gap-7 lg:grid-cols-[1.15fr_0.85fr] lg:gap-9">
             <div className="max-w-3xl min-w-0">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-(--border) bg-(--surface) px-3.5 py-2 shadow-sm backdrop-blur-md">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-(--border) bg-(--surface) px-3.5 py-2 shadow-sm backdrop-blur-md">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-(--accent) opacity-30" />
                   <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-(--accent)" />
@@ -133,22 +145,22 @@ export default function Home() {
                 <span className="eyebrow">Senior Full Stack Engineer</span>
               </div>
 
-              <p className="eyebrow mb-3">Enterprise systems · Fintech · Modern web</p>
+              <p className="eyebrow mb-2">Enterprise systems · Fintech · Modern web</p>
 
               <h1
                 id="intro-title"
-                className="max-w-4xl text-5xl font-semibold tracking-[-0.04em] sm:text-6xl lg:text-7xl"
+                className="max-w-4xl text-4xl font-semibold tracking-[-0.04em] sm:text-5xl lg:text-6xl"
               >
                 Building software that scales with{" "}
                 <span className="gradient-text">real-world needs.</span>
               </h1>
 
-              <p className="mt-6 max-w-2xl text-base leading-7 text-(--muted-foreground) sm:text-lg sm:leading-8">
+              <p className="mt-4 max-w-2xl text-base leading-7 text-(--muted-foreground) sm:text-lg sm:leading-8">
                 I&apos;m {siteConfig.name}, a Senior Full Stack Engineer focused on scalable backend
                 systems, enterprise applications, fintech platforms, and modern web products.
               </p>
 
-              <div className="mt-7 flex flex-wrap gap-3">
+              <div className="mt-5 flex flex-wrap gap-3">
                 <a href="#projects" className="button-primary group">
                   View Projects
                   <span className="transition-transform duration-200 group-hover:translate-x-1">
@@ -156,7 +168,7 @@ export default function Home() {
                   </span>
                 </a>
 
-                <a href={`/contact`} className="button-secondary">
+                <a href="/contact" className="button-secondary">
                   Get in touch
                 </a>
 
@@ -170,11 +182,11 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="mt-8 border-t border-(--border) pt-6">
-                <p className="eyebrow mb-3">Core engineering stack</p>
+              <div className="mt-6 border-t border-(--border) pt-4">
+                <p className="eyebrow mb-2.5">Core engineering stack</p>
 
-                <div className="flex max-w-3xl flex-wrap gap-2">
-                  {technologies.slice(0, 8).map((technology) => (
+                <div className="flex max-w-4xl flex-wrap gap-2">
+                  {technologies.map((technology) => (
                     <span key={technology} className="tech-badge">
                       {technology}
                     </span>
@@ -210,16 +222,16 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className="my-5 h-px bg-(--border)" />
+                <div className="my-4 h-px bg-(--border)" />
 
                 <p className="text-sm leading-6 text-(--muted-foreground)">
                   Experienced in designing and building production software across fintech,
                   enterprise data, personal finance, and SaaS environments.
                 </p>
 
-                <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
                   <div className="rounded-xl border border-(--border) bg-(--surface-soft) p-3.5">
-                    <div className="mb-2.5 flex h-9 w-9 items-center justify-center rounded-lg bg-(--surface) text-(--cyan)">
+                    <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-(--surface) text-(--cyan)">
                       <LayersIcon />
                     </div>
 
@@ -229,7 +241,7 @@ export default function Home() {
                   </div>
 
                   <div className="rounded-xl border border-(--border) bg-(--surface-soft) p-3.5">
-                    <div className="mb-2.5 flex h-9 w-9 items-center justify-center rounded-lg bg-(--surface) text-(--green)">
+                    <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-(--surface) text-(--green)">
                       <DatabaseIcon />
                     </div>
 
@@ -239,7 +251,7 @@ export default function Home() {
                   </div>
 
                   <div className="rounded-xl border border-(--border) bg-(--surface-soft) p-3.5">
-                    <div className="mb-2.5 flex h-9 w-9 items-center justify-center rounded-lg bg-(--surface) text-(--blue)">
+                    <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-(--surface) text-(--blue)">
                       <BriefcaseIcon />
                     </div>
 
@@ -249,7 +261,7 @@ export default function Home() {
                   </div>
 
                   <div className="rounded-xl border border-(--border) bg-(--surface-soft) p-3.5">
-                    <div className="mb-2.5 flex h-9 w-9 items-center justify-center rounded-lg bg-(--surface) text-(--accent)">
+                    <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-lg bg-(--surface) text-(--accent)">
                       <CheckIcon />
                     </div>
 
@@ -259,7 +271,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="mt-5 rounded-xl border border-(--border) bg-(--surface-soft) px-4 py-3">
+                <div className="mt-4 rounded-xl border border-(--border) bg-(--surface-soft) px-4 py-3">
                   <div className="flex items-center gap-2">
                     <span
                       aria-hidden="true"
@@ -282,14 +294,14 @@ export default function Home() {
         aria-labelledby="experience-title"
         className="scroll-mt-12 border-b border-(--border)"
       >
-        <div className="shell py-14 sm:py-16 lg:py-18">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div className="shell py-8 sm:py-10 lg:py-12">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="eyebrow">Engineering experience</p>
 
               <h2
                 id="experience-title"
-                className="mt-3 max-w-3xl text-3xl font-semibold tracking-[-0.025em] sm:text-4xl"
+                className="mt-2.5 max-w-3xl text-3xl font-semibold tracking-[-0.025em] sm:text-4xl"
               >
                 Building production software across{" "}
                 <span className="gradient-text">fintech, data, and SaaS.</span>
@@ -302,7 +314,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="mt-7 grid gap-5 md:grid-cols-2">
+          <div className="mt-5 grid gap-4 md:grid-cols-2">
             <article className="interactive-card group rounded-[1.35rem] p-5 sm:p-6">
               <div className="flex items-start justify-between gap-4">
                 <p className="font-mono text-xs font-medium text-(--muted-foreground)">
@@ -325,7 +337,7 @@ export default function Home() {
                 lineage, integrations, and access-control workflows.
               </p>
 
-              <div className="mt-5 flex items-center gap-2 font-mono text-xs text-(--muted-foreground)">
+              <div className="mt-4 flex items-center gap-2 font-mono text-xs text-(--muted-foreground)">
                 <span className="h-1.5 w-1.5 rounded-full bg-(--cyan)" />
                 Enterprise data & collaboration
               </div>
@@ -353,7 +365,7 @@ export default function Home() {
                 finance products.
               </p>
 
-              <div className="mt-5 flex items-center gap-2 font-mono text-xs text-(--muted-foreground)">
+              <div className="mt-4 flex items-center gap-2 font-mono text-xs text-(--muted-foreground)">
                 <span className="h-1.5 w-1.5 rounded-full bg-(--green)" />
                 Banking & personal finance
               </div>
@@ -363,20 +375,20 @@ export default function Home() {
       </section>
 
       <section aria-labelledby="focus-title" className="border-b border-(--border)">
-        <div className="shell py-14 sm:py-16 lg:py-18">
-          <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+        <div className="shell py-8 sm:py-10 lg:py-12">
+          <div className="grid gap-7 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <div>
               <p className="eyebrow">Engineering focus</p>
 
               <h2
                 id="focus-title"
-                className="mt-3 text-3xl font-semibold tracking-[-0.025em] sm:text-4xl"
+                className="mt-2.5 text-3xl font-semibold tracking-[-0.025em] sm:text-4xl"
               >
                 From system architecture to the{" "}
                 <span className="gradient-text">final product.</span>
               </h2>
 
-              <p className="mt-4 max-w-xl text-sm leading-6 text-(--muted-foreground) sm:text-base">
+              <p className="mt-3 max-w-xl text-sm leading-6 text-(--muted-foreground) sm:text-base">
                 My experience spans backend architecture, APIs, distributed systems, databases,
                 integrations, and frontend applications.
               </p>
@@ -440,14 +452,14 @@ export default function Home() {
         aria-labelledby="projects-title"
         className="scroll-mt-12 border-b border-(--border)"
       >
-        <div className="shell max-w-[1480px] py-14 sm:py-16 lg:py-18">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div className="shell max-w-[1480px] py-8 sm:py-10 lg:py-12">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="eyebrow">Selected projects</p>
 
               <h2
                 id="projects-title"
-                className="mt-3 max-w-3xl text-3xl font-semibold tracking-[-0.025em] sm:text-4xl"
+                className="mt-2.5 max-w-3xl text-3xl font-semibold tracking-[-0.025em] sm:text-4xl"
               >
                 Systems and products I&apos;ve helped <span className="gradient-text">build.</span>
               </h2>
@@ -459,7 +471,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="mt-7 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {projects.slice(0, 3).map((project) => (
               <ProjectCard key={project.slug} {...project} />
             ))}
@@ -468,8 +480,8 @@ export default function Home() {
       </section>
 
       <section id="contact" aria-labelledby="contact-title" className="scroll-mt-12">
-        <div className="shell py-14 sm:py-16 lg:py-18">
-          <div className="panel relative overflow-hidden rounded-[1.5rem] p-6 sm:p-8 lg:p-10">
+        <div className="shell py-8 sm:py-10 lg:py-12">
+          <div className="panel relative overflow-hidden rounded-[1.5rem] p-6 sm:p-8 lg:p-9">
             <div
               aria-hidden="true"
               className="absolute -top-32 -right-32 h-80 w-80 rounded-full bg-[radial-gradient(circle,rgba(34,197,94,0.10),transparent_68%)] blur-2xl"
@@ -480,17 +492,17 @@ export default function Home() {
 
               <h2
                 id="contact-title"
-                className="mt-3 text-3xl font-semibold tracking-[-0.025em] sm:text-4xl"
+                className="mt-2.5 text-3xl font-semibold tracking-[-0.025em] sm:text-4xl"
               >
                 Have a product, system, or engineering problem to solve?
               </h2>
 
-              <p className="mt-4 max-w-2xl text-base leading-7 text-(--muted-foreground)">
+              <p className="mt-3 max-w-2xl text-base leading-7 text-(--muted-foreground)">
                 I&apos;m open to conversations around software engineering, product development,
                 backend systems, and full-stack work.
               </p>
 
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-5 flex flex-wrap gap-3">
                 <a href="/contact" className="button-primary group">
                   Get in touch
                   <span className="transition-transform duration-200 group-hover:translate-x-1">

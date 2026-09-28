@@ -82,7 +82,7 @@ function ArrowUpIcon() {
 export default function AboutPage() {
   return (
     <main id="main-content" className="flex-1">
-      <section className="hero-surface relative overflow-hidden border-b border-(--border)">
+      <section className="relative overflow-hidden border-b border-(--border)">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute top-[15%] left-[5%] h-64 w-64 rounded-full bg-(--accent)/6 blur-3xl" />
           <div className="absolute top-[10%] right-[8%] h-72 w-72 rounded-full bg-(--accent-secondary)/6 blur-3xl" />

@@ -227,6 +227,7 @@ function SocialIcon({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
+      title={label}
       className={`group flex h-9 w-9 cursor-pointer items-center justify-center rounded-md transition-all duration-200 hover:-translate-y-0.5 ${className ?? ""}`}
     >
       {children}
