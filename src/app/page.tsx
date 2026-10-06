@@ -21,6 +21,7 @@ const technologies = [
   "REST API",
   "GraphQL",
   "Microservices",
+  "Redis",
   "RabbitMQ",
   "Python",
   "FastAPI",
