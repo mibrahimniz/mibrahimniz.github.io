@@ -11,7 +11,7 @@ export const siteConfig = {
     github: "https://github.com/mibrahimniz",
     linkedin: "https://www.linkedin.com/in/muhammad-ibrahim-nizamani/",
     upwork: "https://www.upwork.com/freelancers/~01e09da957f3af849e",
-    resume: "/ibrahim%27s%20resume.pdf",
+    resume: "/Ibrahim%27s%20Resume.pdf",
   },
 
   navItems: [
